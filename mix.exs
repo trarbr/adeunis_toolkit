@@ -4,7 +4,7 @@ defmodule AdeunisToolkit.MixProject do
   def project do
     [
       app: :adeunis_toolkit,
-      version: "0.1.0",
+      version: "0.0.1-alpha",
       elixir: "~> 1.14",
       elixirc_paths: elixirc_paths(Mix.env()),
       start_permanent: Mix.env() == :prod,
@@ -52,7 +52,8 @@ defmodule AdeunisToolkit.MixProject do
       {:gettext, "~> 0.20"},
       {:jason, "~> 1.2"},
       {:dns_cluster, "~> 0.1.1"},
-      {:bandit, "~> 1.2"}
+      {:bandit, "~> 1.2"},
+      {:adeunis, git: "https://github.com/trarbr/adeunis.git", ref: "add-registers"}
     ]
   end
 

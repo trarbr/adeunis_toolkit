@@ -18,6 +18,7 @@ defmodule AdeunisToolkitWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :home
+    live "/frame-builder", FrameBuilderLive
   end
 
   # Other scopes may use custom stacks.
