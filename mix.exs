@@ -4,7 +4,7 @@ defmodule AdeunisToolkit.MixProject do
   def project do
     [
       app: :adeunis_toolkit,
-      version: "0.0.1-alpha",
+      version: "0.0.1-dev",
       elixir: "~> 1.14",
       elixirc_paths: elixirc_paths(Mix.env()),
       start_permanent: Mix.env() == :prod,

@@ -57,9 +57,26 @@ defmodule AdeunisToolkitWeb.FrameBuilderLive.GetRegistersRequest do
     """
   end
 
+  @register_ids [
+                  300,
+                  [301, 323, 324, 325, 326, 327],
+                  304,
+                  306,
+                  308,
+                  320,
+                  321,
+                  322,
+                  329,
+                  Range.to_list(330..349),
+                  Range.to_list(350..395//5),
+                  Range.to_list(351..396//5) ++ Range.to_list(353..398//5),
+                  Range.to_list(352..397//5) ++ Range.to_list(354..399//5)
+                ]
+                |> List.flatten()
+                |> Enum.sort()
+
   defp register_ids() do
-    # TODO: Compute list of register IDs
-    [300, 301, 302, 303]
+    @register_ids
   end
 
   def update(_assigns, socket) do
