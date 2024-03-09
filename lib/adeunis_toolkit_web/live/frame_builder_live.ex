@@ -38,7 +38,9 @@ defmodule AdeunisToolkitWeb.FrameBuilderLive do
   defp frame_types() do
     [
       {"Get Applicative Configuration", FrameBuilderLive.GetApplicativeConfiguration},
-      {"Get Registers Request", FrameBuilderLive.GetRegistersRequest}
+      {"Get Network Configuration", FrameBuilderLive.GetNetworkConfiguration},
+      {"Get Registers Request", FrameBuilderLive.GetRegistersRequest},
+      {"Reboot", FrameBuilderLive.Reboot}
     ]
   end
 
