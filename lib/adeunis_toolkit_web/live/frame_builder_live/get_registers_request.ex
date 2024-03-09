@@ -14,7 +14,6 @@ defmodule AdeunisToolkitWeb.FrameBuilderLive.GetRegistersRequest do
         <div class="flex flex-wrap justify-center items-end">
           <div class="md:w-1/3 px-4">
             <.input
-              errors={["There was an error!"]}
               type="select"
               label="Register ID"
               field={@add_register_form[:register_id]}
