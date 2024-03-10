@@ -11,7 +11,7 @@ defmodule AdeunisToolkitWeb.FrameBuilderLive.Reboot do
       <.form for={@reboot_form} phx-target={@myself} phx-change="update-delay">
         <div class="flex flex-wrap justify-center items-end">
           <div class="md:w-1/3 px-4">
-            <.input type="number" min="1" max="65535" label="Delay" field={@reboot_form[:delay]} />
+            <.input type="number" min="1" max="65535" label="Delay (minutes)" field={@reboot_form[:delay]} />
           </div>
         </div>
       </.form>
