@@ -53,7 +53,7 @@ defmodule AdeunisToolkit.MixProject do
       {:jason, "~> 1.2"},
       {:dns_cluster, "~> 0.1.1"},
       {:bandit, "~> 1.2"},
-      {:adeunis, git: "https://github.com/trarbr/adeunis.git", ref: "add-registers"}
+      {:adeunis, git: "https://github.com/trarbr/adeunis.git", ref: "e722825e73d70d1f52459bb2113abf65364421b3"}
     ]
   end
 
